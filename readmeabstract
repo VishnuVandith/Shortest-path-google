@@ -1,0 +1,172 @@
+tracking system using a global positioning system (GPS)
+technology module to receive the location of the vehicle,
+to forward into microcontroller and to connect internet
+by a general packet radio service (GPRS) technology for
+displaying a real time on the website map developed by
+Google Map which allows inspection of vehicles at all
+times. There are 3 parts of this project. The first part is a
+program developed in C language for controlling the
+hardware. Employing PHP and AJAX language will be
+developed for the Google Map API to help a map
+construction on the website. The second part is the
+hardware, there are the GPS and GPRS modules, the
+GPS module will locate the vehicles via the satellite, and
+the GPRS module will assemble all data and send it to
+the website by the microcontroller. The final part is the
+interface using RS232 for connecting between the GPS
+and GPRS modules. With the Google Map on a real-time
+website, vehicles can be monitored and located very
+effectively. This includes paths and/or vehicles directions.
+However, the small error is at approximately 5 meters in
+the wrong location due to the limitation of hardware and
+the ratio of map reference.
+Keywords: real-time, vehicle tracking, GPS, GPRS,
+Google Map, website
+1. INTRODUCTION
+When seriously ill patients are transported by ambulance,
+we suggest that a new mobile communication system
+would improve the speed and accuracy of diagnosis and
+save lives by transmitting medical data from the
+ambulance to the emergency medical center via a high
+elevation angle satellite (quasi-zenith satellite).
+Nowadays, vehicles are essential to transport products or
+goods in many organizations or firms, but there are many
+problems of using the vehicles for their business such as
+the delay of the deliveries, driving out of paths, or even
+stealing oil and products. Therefore, GPS and GPRS are
+important technologies for monitoring such problems.
+However, it still is not easy to implement them for
+monitoring and tracking vehicles on the website using
+Google map. Recently, the GPS technology has been
+presented in many researches. For example, the paper [1]
+has presented a vehicle warning system be responsive to
+vehicle speed and position as determined by GPS. The
+paper [2] has proposed an object locator system for
+obtaining information about the location of an individual,
+animal or moveable object. The paper [3] has presented a
+vehicle navigation of train, collision avoidance and
+control system. The paper [4] has proposed an estimating
+GPS time at cellular terminals based on timing of
+information from base stations and satellites. However,
+no papers have demonstrated the GPS and GPRS
+technologies for a real-time vehicle tracking based on the
+Google map.
+ In this paper, a real-time ambulance/vehicle
+tracking system proposes the use of a global positioning
+system (GPS) technology module to receive the location
+of the vehicle, to forward into microcontroller and to
+connect internet by a general packet radio service
+(GPRS) technology for displaying a real time on the
+website map developed by Google Map which allows
+inspection of vehicles at all times. There are 3 parts of
+this project. The first part is a program developed in C
+language for controlling the hardware. Employing PHP
+and AJAX language will be developed for the Google
+Map API to help a map construction on the website. The
+second part is the hardware, there are the GPS and GPRS
+modules, the GPS module will locate the vehicles via the
+satellite, and the GPRS module will assemble all data and
+send it to the website by the microcontroller. The final
+part is the interface using RS232 for connecting between
+the GPS and GPRS modules. With the Google Map on a
+real-time website, vehicles can be monitored and located
+very effectively. This includes paths and/or vehicles
+directions. However, the small error is at approximately 5
+meters in the wrong location due to the limitation of
+hardware and the ratio of map reference.
+2. TECHNOLOGY BACKGROUND
+2.1. GPS Technology
+A GPS tracking unit is a device that uses the
+Global Positioning System to determine the precise
+location of a vehicle, person, or other asset to which it is
+attached and to record the position of the asse
+intervals. The recorded location data can be stored within
+the tracking unit, or it may be transmitted to a central
+location data base, or internet-connected computer, using
+a cellular (GPRS), radio, or satellite modem embedded in
+the unit. This allows the asset's location to be displayed
+against a map backdrop either in real-time or when
+analyzing the track later, using customized software.
+Figure 1. GR-82 GPS Module
+2.2. GPRS Technology
+GPRS technology (Figure 2) allows mobile phone to be
+used for sending and receiving data over an Internet
+protocol based network and the mobile system can keep
+communication with the monitoring center when the
+vehicle is at the speed over 100 km/h. So we can do realtime
+radiation survey in large area. The system is useful
+to the works such as routine patrols, nuclear terrorism,
+radioactive pollution accident and nuclear accident.
+Figure 2. GSM/GPRS Module: ET-GSM SIM300CZ
+2.3. Google Map
+GPRS technology (Figure 3) allows mobile phone to be
+used for sending and receiving data over an Internet
+protocol based network and the mobile system can keep
+communication with the monitoring center when the
+vehicle is at the speed over 100 km/h. So we can do realtime
+radiation survey in large area. The system is useful
+to the works such as routine patrols, nuclear terrorism,
+radioactive pollution accident and nuclear accident.
+Figure 3. Google Map
+3. PROPOSED AND PROTOTYPE SYSTEM
+We have implemented a prototype based on the designed
+in Section III. Figure 1 shows the prototype of our GPS
+Tracking Module. The size of the prototype is about 2.5”
+wide by 4.5” long and by 2” thick. Figure 4 shows the
+hardware at the ambulance that has a GPS and GPRS
+Module. Figure 5 shows a proposed system of the realtime
+GPS ambulance/vehicle tracking system displayed
+on a Google-Map-based website consisting of five
+processes as follows. For the first process, the GPS
+module will connect the satellites and then it will be
+received the position (latitude and longitude) from the
+satellites. In the second process, the GPRS module will
+connect the cellular antennas and then it will send the
+position to the database servers shown in the third
+process. For the fourth process, the proposed website
+based on Google Map will display the vehicle tracking
+using the data from the database servers containing the
+GPS position. In the last process, the people can access
+the website for monitoring the vehicle objects.
+Figure 4. The hardware at the Ambulance.
+4. EXPERIMENTAL RESULTS
+For the overall results, the small error for tracking
+vehicles is below 15 meters in the wrong location due to
+the limitation of hardware and the ratio of map reference.
+We can see that the tracks of the mobile system can be
+always displayed on the road of the electric map. GPS
+can provide not only precise latitude and longitude data,
+but also can provide very accurate time data by the
+The 3rd Biomedical Engineering International Conference 2010 243
+satellites. The time of the computers and PDAs can be
+corrected by GPS before a start of the mobile radiation
+survey. Figure 6 and 7 show an example of the real-time
+GPS vehicle tracking based on Google Map. As shown in
+Figure 6, there are two positions which are two different
+times from 19:46 to 19:58. As shown in Figure 7, there
+are two positions which are two different an oil level
+from 3 down to 2.
+Figure 5. An example of the real-time GPS vehicle
+tracking based on Google Map (from 19:46 to 19:58).
+Figure 6. An example of the real-time GPS vehicle
+tracking based on Google Map (OIL Level 3 to 2).
+Figure 7. The real-time GPS ambulance/vehicle tracking
+System.
+5. CONCLUSION
+The real-time vehicle tracking system has been presented
+through the use of the global positioning system (GPS)
+technology module to receive the location of the vehicle,
+to forward into microcontroller and to connect internet by
+a general packet radio service (GPRS) technology for
+displaying a real time on the website map developed by
+Google Map which allows inspection of vehicles at all
+times. The Goo-tracking system has shown the feasibility
+of using it for fleet management. It can also be used for
+lost vehicle tracking when working with the ambulance
+alarm system. In the future, we will plan to integrate
+other sensors. The sensors report vehicle status
+information for intelligent tracking management.
+However, it includes paths and/or vehicles directions and
+the small error is at approximately 5 meters in the wrong
+location due to the limitation of hardware and the ratio of
+map reference.
